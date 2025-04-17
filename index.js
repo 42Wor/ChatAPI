@@ -43,7 +43,7 @@ router.engine("handlebars", engine({
         path.join(__dirname, "views")
     ],
     cache: false,
-    helpers: { // <-- ADD THIS helpers OBJECT
+    helpers: {
         eq: function (a, b) { // <-- Move your helpers inside here
             return a === b;
         },
